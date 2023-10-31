@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ludo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@300;400;500;600;800&family=Public+Sans:wght@600&family=Raleway:wght@500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/all.min.css" rel="stylesheet">
+    <link href="assets/Ludo.css" rel="stylesheet">
+</head>
+<body>
+<main>
+    <section class="board">
+        <div class="player">
+            <div class="greenCoinSurface coinSurface">
+                <div>
+                    <div class="coinPlacement" id="cg1"><img alt="" src="assets/images/greenCoin.png"></div>
+                    <div class="coinPlacement" id="cg2"><img alt="" src="assets/images/greenCoin.png"></div>
+                </div>
+                <div>
+                    <div class="coinPlacement" id="cg3"><img alt="" src="assets/images/greenCoin.png"></div>
+                    <div class="coinPlacement" id="cg4"><img alt="" src="assets/images/greenCoin.png"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="player">
+            <div class="yellowCoinSurface coinSurface">
+                <div>
+                    <div class="coinPlacement" id="cy1"><img alt="" src="assets/images/yellowCoin.png"></div>
+                    <div class="coinPlacement" id="cy2"><img alt="" src="assets/images/yellowCoin.png"></div>
+                </div>
+                <div>
+                    <div class="coinPlacement" id="cy3"><img alt="" src="assets/images/yellowCoin.png"></div>
+                    <div class="coinPlacement" id="cy4"><img alt="" src="assets/images/yellowCoin.png"></div>
+                </div>
+            </div>
+        </div>
+        <div class="player">
+            <div class="redCoinSurface coinSurface">
+                <div>
+                    <div class="coinPlacement" id="cr1"><img alt="" src="assets/images/redCoin.png"></div>
+                    <div class="coinPlacement" id="cr2"><img alt="" src="assets/images/redCoin.png"></div>
+                </div>
+                <div>
+                    <div class="coinPlacement" id="cr3"><img alt="" src="assets/images/redCoin.png"></div>
+                    <div class="coinPlacement" id="cr4"><img alt="" src="assets/images/redCoin.png"></div>
+                </div>
+            </div>
+        </div>
+        <div class="player">
+            <div class="blueCoinSurface coinSurface">
+                <div>
+                    <div class="coinPlacement" id="cb1"><img alt="" src="assets/images/blueCoin.png"></div>
+                    <div class="coinPlacement" id="cb2"><img alt="" src="assets/images/blueCoin.png"></div>
+                </div>
+                <div>
+                    <div class="coinPlacement" id="cb3"><img alt="" src="assets/images/blueCoin.png"></div>
+                    <div class="coinPlacement" id="cb4"><img alt="" src="assets/images/blueCoin.png"></div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="centerPieces" id="finalGreen"></div>
+            <div class="centerPieces" id="finalYellow"></div>
+            <div class="centerPieces" id="finalRed"></div>
+            <div class="centerPieces" id="finalBlue"></div>
+
+        </div>
+
+        <section class="exits greenExit">
+            <div class="exitBlocks" id="E1"></div>
+            <div class="exitBlocks greenStar" id="E2"></div>
+            <div class="exitBlocks" id="E3"></div>
+            <div class="exitBlocks" id="E4"></div>
+            <div class="exitBlocks" id="E5"></div>
+            <div class="exitBlocks" id="E6"></div>
+            <div class="exitBlocks greenArrow" id="E7"></div>
+            <div class="exitBlocks greenBlocks" id="E8"></div>
+            <div class="exitBlocks greenBlocks" id="E9"></div>
+            <div class="exitBlocks greenBlocks" id="E10"></div>
+            <div class="exitBlocks greenBlocks" id="E11"></div>
+            <div class="exitBlocks greenBlocks" id="E12"></div>
+            <div class="exitBlocks" id="E13"></div>
+            <div class="exitBlocks" id="E14"></div>
+            <div class="exitBlocks star" id="E15"></div>
+            <div class="exitBlocks" id="E16"></div>
+            <div class="exitBlocks" id="E17"></div>
+            <div class="exitBlocks" id="E18"></div>
+
+        </section>
+        <section class="exits blueExit">
+            <div class="exitBlocks" id="E19"></div>
+            <div class="exitBlocks" id="E20"></div>
+            <div class="exitBlocks" id="E21"></div>
+            <div class="exitBlocks star" id="E22"></div>
+            <div class="exitBlocks" id="E23"></div>
+            <div class="exitBlocks" id="E24"></div>
+            <div class="exitBlocks blueBlocks" id="E25"></div>
+            <div class="exitBlocks blueBlocks" id="E26"></div>
+            <div class="exitBlocks blueBlocks" id="E27"></div>
+            <div class="exitBlocks blueBlocks" id="E28"></div>
+            <div class="exitBlocks blueBlocks" id="E29"></div>
+            <div class="exitBlocks blueArrow" id="E30"></div>
+            <div class="exitBlocks" id="E31"></div>
+            <div class="exitBlocks" id="E32"></div>
+            <div class="exitBlocks " id="E33"></div>
+            <div class="exitBlocks" id="E34"></div>
+            <div class="exitBlocks blueStar" id="E35"></div>
+            <div class="exitBlocks" id="E36"></div>
+
+        </section>
+        <section class="exits yellowExit">
+            <div ID="E37" class="exitBlocks"></div>
+            <div ID="E38" class="exitBlocks yellowStar"></div>
+            <div ID="E39" class="exitBlocks"></div>
+            <div ID="E40" class="exitBlocks"></div>
+            <div ID="E41" class="exitBlocks"></div>
+            <div ID="E42" class="exitBlocks"></div>
+            <div ID="E43" class="exitBlocks yellowArrow"></div>
+            <div ID="E44" class="exitBlocks yellowBlocks"></div>
+            <div ID="E45" class="exitBlocks yellowBlocks"></div>
+            <div ID="E46" class="exitBlocks yellowBlocks"></div>
+            <div ID="E47" class="exitBlocks yellowBlocks"></div>
+            <div ID="E48" class="exitBlocks yellowBlocks"></div>
+            <div ID="E49" class="exitBlocks"></div>
+            <div ID="E50" class="exitBlocks"></div>
+            <div ID="E51" class="exitBlocks star"></div>
+            <div ID="E52" class="exitBlocks"></div>
+            <div ID="E53" class="exitBlocks"></div>
+            <div ID="E54" class="exitBlocks"></div>
+
+        </section>
+        <section class="exits redExit">
+            <div class="exitBlocks" id="E55"></div>
+            <div class="exitBlocks" id="E56"></div>
+            <div class="exitBlocks" id="E57"></div>
+            <div class="exitBlocks star" id="E58"></div>
+            <div class="exitBlocks" id="E59"></div>
+            <div class="exitBlocks" id="E60"></div>
+            <div class="exitBlocks redBlocks" id="E61"></div>
+            <div class="exitBlocks redBlocks" id="E62"></div>
+            <div class="exitBlocks redBlocks" id="E63"></div>
+            <div class="exitBlocks redBlocks" id="E64"></div>
+            <div class="exitBlocks redBlocks" id="E65"></div>
+            <div class="exitBlocks redArrow" id="E66"></div>
+            <div class="exitBlocks" id="E67"></div>
+            <div class="exitBlocks" id="E68"></div>
+            <div class="exitBlocks" id="E69"></div>
+            <div class="exitBlocks" id="E70"></div>
+            <div class="exitBlocks redStar" id="E71"></div>
+            <div class="exitBlocks" id="E72"></div>
+
+        </section>
+    </section>
+
+    <div>
+        <div class="diceArea" id="dice">
+            <div class="front">
+                <div></div>
+            </div>
+            <div class="back">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="left">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="right">
+
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>
+            <div class="top">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="bottom">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <aside>
+        <img alt="" src="assets/images/favicon-2.png">
+        <h1>Ludo</h1>
+        <br>
+        <div>
+            <div></div>
+            <h6 id="txtUser01">User_001</h6>
+            <div class="color"></div>
+            <i class="fa-solid fa-pen-to-square"></i>
+        </div>
+        <div>
+            <div></div>
+            <h6 id="txtUser02">User_002</h6>
+            <div class="color"></div>
+            <i class="fa-solid fa-pen-to-square"></i>
+        </div>
+        <div>
+            <div></div>
+            <h6 id="txtUser03">User_003</h6>
+            <div class="color"></div>
+            <i class="fa-solid fa-pen-to-square"></i>
+        </div>
+        <div>
+            <div></div>
+            <h6 id="txtUser04">User_004</h6>
+            <div class="color"></div>
+            <i class="fa-solid fa-pen-to-square"></i>
+        </div>
+    </aside>
+
+    <aside id="scoreboard">
+        <div>
+            <div></div>
+            <h6 id="Winner">-</h6>
+        </div>
+        <div>
+            <div></div>
+            <h6 id="runnerUp">-</h6>
+        </div>
+        <div>
+            <div></div>
+            <h6 id="secondRunnerUp">-</h6>
+        </div>
+        <div>
+            <div></div>
+            <h6 id="thirdRunnerUp">-</h6>
+        </div>
+    </aside>
+
+    <img alt="" src="assets/images/loading.gif">
+
+</main>
+<div aria-hidden="true" aria-labelledby="playerFormLabel" class="modal fade" data-bs-backdrop="static" id="playerForm"
+     tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="playerFormLabel">Players</h1>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label" for="player1">Player 01</label>
+                        <input aria-describedby="player1" class="form-control" id="player1" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="player2">Player 02</label>
+                        <input aria-describedby="player2" class="form-control" id="player2" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="player3">Player 03</label>
+                        <input aria-describedby="player3" class="form-control" id="player3" type="text">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="player4">Player 04</label>
+                        <input aria-describedby="player4" class="form-control" id="player4" type="text">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="submitPlayers" type="button">Let's Go!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/all.min.js"></script>
+<script src="NavigationData/NavModel.js"></script>
+<script src="NavigationData/NavPath.js"></script>
+<script src="model/user.js"></script>
+<script src="assets/Ludo.js"></script>
+
+</body>
+</html>
